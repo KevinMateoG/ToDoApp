@@ -19,7 +19,12 @@ class Todo:
     class TodoBook:
         def __init__(self):
             self.todos: dict[int, Todo] = {}
-        #def add_todo(self, title: str,description: str):
+        def add_todo(self, title: str,description: str):
+            id = len(self.todos)+1
+
+
+
+
 
 
 
