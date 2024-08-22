@@ -20,7 +20,10 @@ class Todo:
         def __init__(self):
             self.todos: dict[int, Todo] = {}
         def add_todo(self, title: str,description: str):
-            id = len(self.todos)+1
+            id = int(len(self.todos)+1)
+            todo_1=Todo(id, title,description)
+            self.todos[id]=todo_1
+            return id
 
 
 
